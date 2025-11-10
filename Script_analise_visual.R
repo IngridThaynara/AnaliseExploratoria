@@ -43,7 +43,7 @@ colSums(is.na(base))
 base |>
   ggplot(aes(x = idade)) +
   geom_histogram(
-    bins = 25,                    
+    bins = 25,               
     fill = "#69b3a2",             
     color = "white",              
     alpha = 0.8                   
