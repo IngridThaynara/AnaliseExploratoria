@@ -38,7 +38,7 @@ colSums(is.na(base))
 
 # A partir disso, percebemos que não há dados faltantes no banco de dados que estamos trabalhando
 
-# # Histograma da variável idade ####
+# Histograma da variável idade ####
 
 base |>
   ggplot(aes(x = idade)) +
@@ -47,6 +47,9 @@ base |>
     fill = "#69b3a2",             
     color = "white",              
     alpha = 0.8                   
+  )+
+  scale_x_continuous(
+    breaks = seq(20, 100, by = 5)  # eixo x de 5 em 5 anos
   ) +
   labs(
     title = "Distribuição da Idade",
