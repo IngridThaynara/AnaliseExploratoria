@@ -10,8 +10,7 @@ Projeto da disciplina Prática Estatística I, com análise exploratória de dad
   <img src="figs/hist_idade.png" width="500">
 </p>
 
-O histograma da variável idade apresenta uma distribuição relativamente heterogênea, com idades variando entre aproximadamente 20 e 100 anos. Observa-se uma concentração maior de detentos na faixa entre 40 e 60 anos, enquanto há menor frequência nas extremidades (idosos e jovens).  
-A distribuição não é perfeitamente simétrica, sugerindo leve assimetria à direita, indicando que existem alguns indivíduos mais velhos que puxam a cauda superior da distribuição.
+O histograma da variável idade apresenta uma distribuição relativamente heterogênea, com idades variando de aproximadamente 20 a 95 anos. Observa-se uma maior concentração de indivíduos entre 40 e 60 anos, faixa etária que corresponde ao pico de frequência na amostra.De modo geral, o perfil etário dos detentos é predominantemente composto por adultos de meia-idade, o que é compatível com a faixa populacional mais frequentemente associada à população carcerária.
 
 ---
 
@@ -20,8 +19,8 @@ A distribuição não é perfeitamente simétrica, sugerindo leve assimetria à 
   <img src="figs/box_tempo_preso.png" width="500">
 </p>
 
-O boxplot de tempo_preso mostra que o tempo de encarceramento varia entre cerca de 40 e 90 meses, com mediana próxima a 60 meses (5 anos).  
-Há a presença de outliers acima de 80 meses, representando casos isolados de detentos com tempo de prisão superior ao padrão do grupo.  
+O boxplot de tempo de prisão, em meses, mostra que o tempo de encarceramento varia entre cerca de 40 e 80 meses, com mediana próxima a 60 meses, o que representa 5 anos.  
+Há a presença de *outliers* acima de 80 meses, representando casos isolados de detentos com tempo de prisão superior ao padrão do grupo.  
 A dispersão é moderada, indicando variação significativa entre os tempos de cumprimento de pena.
 
 ---
@@ -31,9 +30,8 @@ A dispersão é moderada, indicando variação significativa entre os tempos de 
   <img src="figs/box_score_por_escolaridade.png" width="500">
 </p>
 
-O boxplot comparando score_periculosidade por escolaridade mostra distribuições relativamente semelhantes entre os três níveis (Fundamental, Médio e Superior).  
-As medianas se situam em torno de 180 a 190 pontos, com leve tendência de redução do score conforme o nível de escolaridade aumenta, especialmente no grupo com ensino superior.  
-Também há outliers pontuais (valores extremos), principalmente entre os indivíduos com escolaridade média.
+O boxplot comparando o score de periculosidade por escolaridade mostra distribuições relativamente semelhantes entre os três níveis de educação (Fundamental, Médio e Superior). As medianas do score de periculosidade situam em torno de 170 a 190 pontos, com leve tendência de redução do score conforme o nível de escolaridade aumenta, especialmente no grupo com ensino superior.  
+Também há *outliers* pontuais entre os indivíduos com escolaridade média.
 
 ---
 
@@ -42,13 +40,12 @@ Também há outliers pontuais (valores extremos), principalmente entre os indiv�
   <img src="figs/bar_reincidente.png" width="500">
 </p>
 
-O gráfico de barras evidencia que a maioria dos detentos não é reincidente: cerca de 162 dos indivíduos estão nessa categoria, enquanto apenas 38 são reincidentes.  
-A diferença é visualmente marcante, reforçando que a reincidência é minoria neste conjunto de dados.
+O gráfico de barras evidencia que a maioria dos detentos não é reincidente, 162 indivíduos estão nessa categoria, enquanto apenas 38 são reincidentes. A diferença é visualmente marcante, reforçando que a reincidência é minoria neste conjunto de dados.
 
 ---
 
 ## Conclusão 
-As variáveis apresentaram distribuições coerentes e sem dados faltantes. O perfil dos detentos é formado, em sua maioria, por adultos entre 40 e 60 anos, não reincidentes e com tempo médio de prisão de cerca de cinco anos. Observa-se ainda que níveis mais altos de escolaridade tendem a estar associados a scores de periculosidade ligeiramente menores.
+As variáveis apresentaram distribuições coerentes e sem dados faltantes. O perfil dos detentos é formado, em sua maioria, por adultos entre 40 e 60 anos, não reincidentes e com tempo médio de prisão de cerca de cinco anos. Observa-se ainda que níveis mais altos de escolaridade tendem a estar associados a scores de periculosidade menores.
 
 ---
 
