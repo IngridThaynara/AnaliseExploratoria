@@ -23,6 +23,9 @@ library(tidyr)
 # Importando do banco de dados ####
 base<- read_xlsx(path = "Base_trabalho.xlsx")
 
+# Criando pasta para salvar os gráficos
+dir.create("figs", showWarnings = FALSE)
+
 # Transformando as variáveis qualitativas em fator 
 base$escolaridade = as.factor(base$escolaridade)
 base$reincidente = as.factor(base$reincidente)
@@ -70,7 +73,7 @@ base |>
     axis.title = element_text(face = "bold")
   )
 
-ggsave("figs/disp_tempo_vs_score.png", last_plot(), width = 7, height = 5, dpi = 300)
+ggsave("figs/disp_tempo_vs_score.png", last_plot(), width = 7, height = 5, dpi = 300) # Salvando o gráfico em .png na pasta criada
 
 # Calculando a correlação entre as duas variáveis ####
 
@@ -97,5 +100,10 @@ tabela_dispersao <- base |>
 # Tabela final contendo todas as medidas de resumo que foram calculadas nesse script 
 
 tabela_final <- tabela_resumo |>
-  left_join(tabela_dispersao, by = "Variável")
+  left_join(tabela_dispersao, by = "Variável") # Fazendo uma concatenação das duas tabelas criadas nesse script 
+
+tabela_final <- tabela_final |>
+  mutate(across(where(is.numeric), round, 2)) # Arredondando os valores das medidas de resumo para duas casas decimais.
+ 
+write.csv(tabela_final, "tabela_final.csv", row.names = FALSE) #Exportando as medidas de resumo das variáveis quantitativas. 
 
