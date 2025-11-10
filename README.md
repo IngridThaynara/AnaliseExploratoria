@@ -49,3 +49,42 @@ A diferença é visualmente marcante, reforçando que a reincidência é minoria
 
 ## Conclusão 
 As variáveis apresentaram distribuições coerentes e sem dados faltantes. O perfil dos detentos é formado, em sua maioria, por adultos entre 40 e 60 anos, não reincidentes e com tempo médio de prisão de cerca de cinco anos. Observa-se ainda que níveis mais altos de escolaridade tendem a estar associados a scores de periculosidade ligeiramente menores.
+
+---
+
+## Definições das medidas de tendência central e dispersão
+
+Considerando um conjunto de observações \( x_1, x_2, \ldots, x_n \):
+
+- **Média:**  
+  \[
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  \]  
+  A média é o somatório de todas as observações dividido pela quantidade de observações.  
+  Ela representa o valor médio dos dados, ou seja, o ponto de equilíbrio do conjunto.
+
+- **Mediana:**  
+  A mediana é o valor central do conjunto de dados quando as observações estão em ordem crescente.  
+  Se o número de observações for ímpar, a mediana é o valor central; se for par, é a média entre os dois valores centrais.  
+  Ou seja, é o ponto que divide o conjunto em duas metades iguais.
+
+- **Variância:**  
+  \[
+  \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
+  \]  
+  A variância é a soma dos quadrados das diferenças entre cada observação e a média, dividida pela quantidade total de observações.  
+  Ela mede o quanto os valores se afastam da média, expressando a dispersão dos dados.
+
+- **Desvio padrão:**  
+  \[
+  \sigma = \sqrt{\sigma^2}
+  \]  
+  O desvio padrão é a raiz quadrada da variância.  
+  Ele indica, em média, o quanto as observações se afastam da média e possui a mesma unidade dos dados originais.
+
+- **Amplitude:**  
+  \[
+  A = \max(x_i) - \min(x_i)
+  \]  
+  A amplitude é a diferença entre o maior e o menor valor observado.  
+  Ela mostra a variação total do conjunto de dados, indicando o intervalo entre os extremos.
